@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de notes</title>
+</head>
+<body>
+<form action="main.php" method="GET" >
+    <label for="choix">Choisissez une option :</label><br>
+
+    <input type="radio" id="option1" name="choix" value="Factorielle" onclick="uncheckOther(this)">
+    <label for="option1">Option 1</label><br>
+
+    <input type="radio" id="option2" name="choix" value="Somme" onclick="uncheckOther(this)">
+    <label for="option2">Somme</label><br><br>
+
+
+    <label for="chiffre">Nombre que vous voulez traiter :</label>
+    <input type="number" id="chiffre" name="chiffre" min="0" step="1"><br>
+    <br><br>
+    <input type="submit" value="Envoyer">
+</form>
+
+
+
+</body>
+</html>
