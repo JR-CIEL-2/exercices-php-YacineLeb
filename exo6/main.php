@@ -3,16 +3,16 @@ include ('read_tab.php');
 
 
 if (isset($_GET["choix"]) && isset($_GET["choix"])) {
-    $choix = $_GET["choix"];
+    $calcul = $_GET["choix"];
     $nombre = $_GET["chiffre"];
 
-    echo $choix;
+    echo $calcul;
     echo '<br>';
-    if ($choix = "Factorielle")
+    if ($calcul == 'Factorielle')
     {
         $resultat = factorielle($nombre);
     }
-    else if($choix = "Somme")
+    else if($calcul == "Somme")
     {
         $resultat = somme($nombre);
     }
